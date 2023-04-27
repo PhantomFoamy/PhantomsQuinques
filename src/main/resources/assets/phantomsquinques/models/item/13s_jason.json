@@ -1,0 +1,51 @@
+{
+  "loader": "forge:separate-perspective",
+
+  "base":
+  {
+    "parent": "phantomsquinques:custom/13s_jason_in_hand",
+    "textures": {
+      "part1": "phantomsquinques:item/13s_jason_in_hand"
+    },
+    "display":
+    {
+      "thirdperson_righthand":
+      {
+        "translation": [-1.0, 12, -1.0],
+        "rotation": [40, 90, 0],
+        "scale": [1.8, 1.8, 1.4]
+      },
+      "firstperson_righthand":
+      {
+        "translation": [2,7.5,0],
+        "rotation": [30,90,0],
+        "scale": [1.2, 1.2, 0.7]
+      }
+    }
+  },
+  "perspectives":
+  {
+    "ground":
+    {
+      "parent": "phantomsquinques:custom/modelname",
+      "textures": {
+        "part1": "phantomsquinques:item/13s_jason"
+      }
+    },
+    "gui":
+    {
+      "parent": "phantomsquinques:custom/modelname",
+      "textures": {
+        "part1": "phantomsquinques:item/13s_jason"
+      }
+    },
+    "fixed":
+    {
+      "parent": "phantomsquinques:custom/modelname",
+      "textures": {
+        "part1": "phantomsquinques:item/13s_jason"
+      }
+    }
+  }
+}
+
