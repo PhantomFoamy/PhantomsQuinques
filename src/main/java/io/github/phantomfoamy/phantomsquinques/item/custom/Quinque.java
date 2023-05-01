@@ -3,20 +3,19 @@ package io.github.phantomfoamy.phantomsquinques.item.custom;
 import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.TextComponent;
-import net.minecraft.network.chat.TranslatableComponent;
 import net.minecraft.world.item.*;
 import net.minecraft.world.level.Level;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 
-public class Quinque extends Item{
+public class Quinque extends SwordItem{
     public String description;
     public String type;
     public String rate;
     public String ghoul;
-    public Quinque(String description, String type, String rate, String ghoul, Properties pProperties) {
-        super(pProperties);
+    public Quinque(Tier pTier, int pAttackDamageModifier, float pAttackSpeedModifier, Item.Properties pProperties, String description, String type, String rate, String ghoul) {
+        super(pTier,pAttackDamageModifier,pAttackSpeedModifier,pProperties);
         this.description = description;
         this.type = type;
         this.rate = rate;

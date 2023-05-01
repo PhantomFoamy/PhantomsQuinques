@@ -1,6 +1,7 @@
 package io.github.phantomfoamy.phantomsquinques;
 
 import io.github.phantomfoamy.phantomsquinques.item.ModItems;
+import io.github.phantomfoamy.phantomsquinques.util.ModItemProperties;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.world.entity.monster.Phantom;
@@ -12,6 +13,7 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.InterModComms;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.InterModEnqueueEvent;
 import net.minecraftforge.fml.event.lifecycle.InterModProcessEvent;
@@ -37,7 +39,8 @@ public class PhantomsQuinques
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
     }
-    private void clientSetup(final FMLCommonSetupEvent event){
+    private void clientSetup(final FMLClientSetupEvent event){
+        ModItemProperties.addCustomItemProperties();
     }
     private void setup(final FMLCommonSetupEvent event) {
     }

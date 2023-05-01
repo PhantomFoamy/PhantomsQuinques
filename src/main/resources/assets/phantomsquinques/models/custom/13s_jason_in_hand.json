@@ -1,6 +1,5 @@
 {
 	"credit": "Made with Blockbench",
-	"gui_light": "front",
 	"texture_size": [64, 64],
 	"textures": {
 		"0": "phantomsquinques:item/13s_jason_in_hand",
@@ -243,38 +242,7 @@
 			}
 		}
 	],
-	"display": {
-		"thirdperson_righthand": {
-			"translation": [0, 15.25, 2]
-		},
-		"thirdperson_lefthand": {
-			"translation": [0, 11.25, 2]
-		},
-		"firstperson_righthand": {
-			"rotation": [-30, 0, 0],
-			"translation": [12, 9.5, -16.25],
-			"scale": [1.5, 1.5, 1.5]
-		},
-		"firstperson_lefthand": {
-			"rotation": [-30, 0, 0],
-			"translation": [14, 6.75, -13],
-			"scale": [1.5, 1.5, 1.5]
-		},
-		"ground": {
-			"scale": [0.22, 0.21, 0.22]
-		},
-		"gui": {
-			"rotation": [0, 90, 0],
-			"translation": [2.25, 0, 0],
-			"scale": [0.3, 0.3, 0.3]
-		},
-		"fixed": {
-			"rotation": [0, -90, 0],
-			"translation": [-2.5, 0, 0],
-			"scale": [0.3, 0.3, 0.3]
-		}
 
-	},
 	"groups": [
 		{
 			"name": "group",

@@ -1,0 +1,58 @@
+{
+	"credit": "Made with Blockbench",
+	"texture_size": [32, 32],
+	"textures": {
+		"0": "phantomsquinques:item/yukimura_in_hand",
+		"particle": "phantomsquinques:item/yukimura_in_hand"
+	},
+	"elements": [
+		{
+			"from": [8, -16, 8],
+			"to": [9, 0, 10],
+			"faces": {
+				"north": {"uv": [4, 0, 4.5, 8], "texture": "#0"},
+				"east": {"uv": [2, 0, 3, 8], "texture": "#0"},
+				"south": {"uv": [4.5, 0, 5, 8], "texture": "#0"},
+				"west": {"uv": [3, 0, 4, 8], "texture": "#0"},
+				"up": {"uv": [5.5, 1, 5, 0], "texture": "#0"},
+				"down": {"uv": [5.5, 1, 5, 2], "texture": "#0"}
+			}
+		},
+		{
+			"from": [8.3, 0, 8],
+			"to": [8.7, 25, 10],
+			"faces": {
+				"north": {"uv": [1, 1.75, 1.1, 16], "texture": "#0"},
+				"east": {"uv": [0, 1.75, 1, 16], "texture": "#0"},
+				"south": {"uv": [0.75, 1.75, 1, 16], "texture": "#0"},
+				"west": {"uv": [1, 1.75, 2, 16], "texture": "#0"},
+				"up": {"uv": [0, 1, 0, 0], "texture": "#0"},
+				"down": {"uv": [0, 0, 0, 1], "texture": "#missing"}
+			}
+		},
+		{
+			"from": [8.3, 25, 8.5],
+			"to": [8.7, 29, 10],
+			"faces": {
+				"north": {"uv": [1.25, 0.75, 1.35, 1.75], "texture": "#0"},
+				"east": {"uv": [0, 0.75, 0.75, 1.75], "texture": "#0"},
+				"south": {"uv": [0.5, 1.75, 0.75, 0.75], "texture": "#0"},
+				"west": {"uv": [1.25, 0.75, 2, 1.75], "texture": "#0"},
+				"up": {"uv": [0, 1, 0, 0], "texture": "#0"},
+				"down": {"uv": [0, 0, 0, 1], "texture": "#missing"}
+			}
+		},
+		{
+			"from": [8.3, 29, 9],
+			"to": [8.7, 32, 10],
+			"faces": {
+				"north": {"uv": [1.5, 0.75, 1.6, 1.75], "texture": "#0"},
+				"east": {"uv": [0, 0, 0.5, 1.75], "texture": "#0"},
+				"south": {"uv": [0.5, 0.75, 0.75, 1.75], "texture": "#0"},
+				"west": {"uv": [1.5, 0, 2, 0.75], "texture": "#0"},
+				"up": {"uv": [0, 1, 0, 0], "texture": "#0"},
+				"down": {"uv": [0, 0, 0, 1], "texture": "#missing"}
+			}
+		}
+	]
+}

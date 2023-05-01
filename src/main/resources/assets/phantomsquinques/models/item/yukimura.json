@@ -1,0 +1,65 @@
+{
+  "loader": "forge:separate-perspective",
+  "base": {
+    "parent": "phantomsquinques:custom/yukimura_in_hand",
+    "textures": {
+      "part1": "phantomsquinques:item/yukimura_in_hand"
+    },
+    "overrides": [
+      {
+      "predicate":{
+        "phantomsquinques:has_blood_bonus": 1
+      },
+      "model":"phantomsquinques:custom/yukimura_blood_in_hand"
+      }
+    ],
+    "display": {
+      "thirdperson_righthand": {
+        "translation": [-0.5, 15.5, 1.5]
+      },
+      "thirdperson_lefthand": {
+        "translation": [0.5, 15.5, 1.5]
+      },
+      "firstperson_righthand": {
+        "rotation": [-2, 0, 0],
+        "translation": [0, 5, -1],
+        "scale": [0.6, 0.6, 0.6]
+      },
+      "firstperson_lefthand": {
+        "rotation": [-2, 0, 0],
+        "translation": [0, 5, -1],
+        "scale": [0.6, 0.6, 0.6]
+      }
+    }
+  },
+  "perspectives": {
+    "ground": {
+      "parent": "item/generated",
+      "textures": {
+        "layer0": "phantomsquinques:item/yukimura"
+      }
+    },
+    "gui": {
+      "parent": "item/generated",
+      "textures": {
+        "layer0": "phantomsquinques:item/yukimura"
+      },
+      "overrides": [
+        {
+          "predicate": {
+            "phantomsquinques:has_blood_bonus": 1
+          },
+          "model": "phantomsquinques:item/yukimura_blood"
+        }
+      ]
+    },
+    "fixed": {
+      "parent": "item/generated",
+      "textures": {
+        "layer0": "phantomsquinques:item/yukimura"
+      }
+    }
+  }
+}
+
+
