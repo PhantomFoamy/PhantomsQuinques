@@ -1,7 +1,8 @@
 package io.github.phantomfoamy.phantomsquinques.item;
 import io.github.phantomfoamy.phantomsquinques.PhantomsQuinques;
-import io.github.phantomfoamy.phantomsquinques.item.custom.Quinque;
-import io.github.phantomfoamy.phantomsquinques.item.custom.Yukimura;
+import io.github.phantomfoamy.phantomsquinques.item.custom.DoujimaItem;
+import io.github.phantomfoamy.phantomsquinques.item.custom.JasonItem;
+import io.github.phantomfoamy.phantomsquinques.item.custom.YukimuraItem;
 import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -14,16 +15,18 @@ public class ModItems {
 
     //quinques
     public static final RegistryObject<Item> JASON = ITEMS.register("13s_jason",
-            ()-> new Quinque(ModTiers.QUINQUE, 5, 5,  new Item.Properties().stacksTo(1).fireResistant()
+            ()-> new JasonItem(ModTiers.QUINQUE, 5, 5,  new Item.Properties().stacksTo(1).fireResistant()
                     .tab(ModCreativeModeTab.PHANTOMS_QUINQUES_TAB), "Can produce a Kagune from its blade","Rinkaku","S+",
                     "Yamori Jason (Omori Yakumo)"));
-    /*public static final RegistryObject<Item> YUKIMURA = ITEMS.register("yukimura",
-            ()-> new Yukimura(ModTiers.QUINQUE, 5, 5,  new Item.Properties().stacksTo(1).fireResistant()
-                    .tab(ModCreativeModeTab.PHANTOMS_QUINQUES_TAB), "Becomes stronger after dealing damage","Koukaku","B",
-                    "Unknown"));*/
 
+    //in its upgraded form, type is koukaku/bikaku, and goul is bin brothers
+    //give high knockback
+    public static final RegistryObject<Item> DOUJIMA = ITEMS.register("doujima",
+            ()-> new DoujimaItem(ModTiers.QUINQUE, 5, 5,  new Item.Properties().stacksTo(1).fireResistant()
+                    .tab(ModCreativeModeTab.PHANTOMS_QUINQUES_TAB), "","Koukaku","Unknown",
+                    "Unknown"));
     public static final RegistryObject<Item> YUKIMURA = ITEMS.register("yukimura",
-            ()-> new Yukimura(ModTiers.QUINQUE, 5, 5,  new Item.Properties().stacksTo(1).fireResistant()
+            ()-> new YukimuraItem(ModTiers.QUINQUE, 5, 5,  new Item.Properties().stacksTo(1).fireResistant()
                     .tab(ModCreativeModeTab.PHANTOMS_QUINQUES_TAB), "Becomes stronger after dealing damage","Koukaku","B",
                     "Unknown"));
 
