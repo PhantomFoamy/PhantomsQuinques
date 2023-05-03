@@ -1,4 +1,4 @@
-package io.github.phantomfoamy.phantomsquinques.item.custom;
+package io.github.phantomfoamy.phantomsquinques.item;
 
 import net.minecraft.world.item.Tier;
 

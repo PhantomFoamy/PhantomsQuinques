@@ -1,7 +1,5 @@
-package io.github.phantomfoamy.phantomsquinques.item.custom;
+package io.github.phantomfoamy.phantomsquinques.item;
 
-import io.github.phantomfoamy.phantomsquinques.item.ItemUtils;
-import io.github.phantomfoamy.phantomsquinques.item.ModItems;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.entity.LivingEntity;
