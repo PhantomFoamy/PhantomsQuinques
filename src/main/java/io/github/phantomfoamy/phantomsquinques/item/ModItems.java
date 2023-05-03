@@ -1,8 +1,5 @@
 package io.github.phantomfoamy.phantomsquinques.item;
 import io.github.phantomfoamy.phantomsquinques.PhantomsQuinques;
-import io.github.phantomfoamy.phantomsquinques.item.custom.DoujimaItem;
-import io.github.phantomfoamy.phantomsquinques.item.custom.JasonItem;
-import io.github.phantomfoamy.phantomsquinques.item.custom.YukimuraItem;
 import io.github.phantomfoamy.phantomsquinques.sound.ModSounds;
 import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
