@@ -3,6 +3,7 @@ import io.github.phantomfoamy.phantomsquinques.PhantomsQuinques;
 import io.github.phantomfoamy.phantomsquinques.item.custom.DoujimaItem;
 import io.github.phantomfoamy.phantomsquinques.item.custom.JasonItem;
 import io.github.phantomfoamy.phantomsquinques.item.custom.YukimuraItem;
+import io.github.phantomfoamy.phantomsquinques.sound.ModSounds;
 import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -39,6 +40,10 @@ public class ModItems {
     //misc
     public static final RegistryObject<Item> KAGUNE = ITEMS.register("kagune",
             ()-> new Item(new Item.Properties().tab(ModCreativeModeTab.PHANTOMS_QUINQUES_TAB)));
+
+    public static final RegistryObject<Item> UNRAVEL_RECORD = ITEMS.register("unravel_music_disc",
+            () -> new RecordItem(4, ModSounds.UNRAVEL,
+                    new Item.Properties().tab(ModCreativeModeTab.PHANTOMS_QUINQUES_TAB).stacksTo(1)));
 
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);

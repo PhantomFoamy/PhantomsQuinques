@@ -1,6 +1,7 @@
 package io.github.phantomfoamy.phantomsquinques;
 
 import io.github.phantomfoamy.phantomsquinques.item.ModItems;
+import io.github.phantomfoamy.phantomsquinques.sound.ModSounds;
 import io.github.phantomfoamy.phantomsquinques.util.ModItemProperties;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
@@ -33,6 +34,7 @@ public class PhantomsQuinques
         IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         ModItems.register(eventBus);
+        ModSounds.register(eventBus);
 
         eventBus.addListener(this::setup);
         eventBus.addListener(this::clientSetup);
