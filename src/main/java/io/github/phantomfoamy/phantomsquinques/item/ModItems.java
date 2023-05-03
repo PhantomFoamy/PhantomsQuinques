@@ -23,10 +23,16 @@ public class ModItems {
     //give high knockback
     public static final RegistryObject<Item> DOUJIMA = ITEMS.register("doujima",
             ()-> new DoujimaItem(ModTiers.QUINQUE, 5, 5,  new Item.Properties().stacksTo(1).fireResistant()
-                    .tab(ModCreativeModeTab.PHANTOMS_QUINQUES_TAB), "","Koukaku","Unknown",
+                    .tab(ModCreativeModeTab.PHANTOMS_QUINQUES_TAB), "Has high knock-back, and can be upgraded","Koukaku","Unknown",
                     "Unknown"));
+
+    public static final RegistryObject<Item> DOUJIMA_KAI = ITEMS.register("doujima_kai",
+            ()-> new DoujimaItem(ModTiers.QUINQUE, 5, 5,  new Item.Properties().stacksTo(1).fireResistant()
+                    .tab(ModCreativeModeTab.PHANTOMS_QUINQUES_TAB), "Has boosting abilities","Koukaku/Bikaku","Unknown",
+                    "Bin Brothers"));
+
     public static final RegistryObject<Item> YUKIMURA = ITEMS.register("yukimura",
-            ()-> new YukimuraItem(ModTiers.QUINQUE, 5, 5,  new Item.Properties().stacksTo(1).fireResistant()
+            ()-> new YukimuraItem(ModTiers.QUINQUE, 5, 8,  new Item.Properties().stacksTo(1).fireResistant()
                     .tab(ModCreativeModeTab.PHANTOMS_QUINQUES_TAB), "Becomes stronger after dealing damage","Koukaku","B",
                     "Unknown"));
 
