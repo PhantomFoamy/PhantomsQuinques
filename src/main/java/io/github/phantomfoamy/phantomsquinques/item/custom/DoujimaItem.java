@@ -19,7 +19,7 @@ public class DoujimaItem extends Quinque{
 
     @Override
     public boolean hurtEnemy(@NotNull ItemStack pStack, LivingEntity pTarget, LivingEntity pAttacker) {
-        pTarget.knockback(1.4f, -pAttacker.getLookAngle().x, -pAttacker.getLookAngle().z);
+        pTarget.knockback(1.1f, -pAttacker.getLookAngle().x, -pAttacker.getLookAngle().z);
         return super.hurtEnemy(pStack, pTarget, pAttacker);
     }
 
