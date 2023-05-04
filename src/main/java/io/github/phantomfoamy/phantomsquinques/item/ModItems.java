@@ -34,6 +34,11 @@ public class ModItems {
                     .tab(ModCreativeModeTab.PHANTOMS_QUINQUES_TAB), "Becomes stronger after dealing damage","Koukaku","B",
                     "Unknown"));
 
+    public static final RegistryObject<Item> ROTTEN_FOLLOW = ITEMS.register("rotten_follow",
+            () -> new RottenFollow(ModTiers.QUINQUE, 5, 8, new Item.Properties().stacksTo(1).fireResistant()
+                    .tab(ModCreativeModeTab.PHANTOMS_QUINQUES_TAB), "chainsaw man reference lmao", "Rinkaku", "S",
+                    "Your mom"));
+
     //misc
     public static final RegistryObject<Item> KAGUNE = ITEMS.register("kagune",
             ()-> new Item(new Item.Properties().tab(ModCreativeModeTab.PHANTOMS_QUINQUES_TAB)));
