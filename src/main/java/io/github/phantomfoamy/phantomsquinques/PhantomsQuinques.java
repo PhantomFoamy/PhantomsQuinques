@@ -29,6 +29,7 @@ import java.util.stream.Collectors;
 @Mod(PhantomsQuinques.MOD_ID)
 public class PhantomsQuinques
 {
+    public static final Logger LOGGER = LogManager.getLogger();
     public static final String MOD_ID = "phantomsquinques";
     public PhantomsQuinques() {
         IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();
