@@ -25,6 +25,18 @@ public class ModItems {
             ()-> new DoujimaKaiItem(ModTiers.QUINQUE, 5, 5,  new Item.Properties().stacksTo(1).fireResistant()
                     .tab(ModCreativeModeTab.PHANTOMS_QUINQUES_TAB), "Has boosting abilities","Koukaku/Bikaku","Unknown",
                     "Bin Brothers"));
+    public static final RegistryObject<Item> KURA = ITEMS.register("kura",
+            ()-> new KuraItem(ModTiers.QUINQUE, 5, 5,  new Item.Properties().stacksTo(1).fireResistant()
+                    .tab(ModCreativeModeTab.PHANTOMS_QUINQUES_TAB), "Can be split to be dual welded","Koukaku","Unknown",
+                    "Unknown"));
+    public static final RegistryObject<Item> KURA_L = ITEMS.register("kura_l",
+            ()-> new KuraItem(ModTiers.QUINQUE, 5, 5,  new Item.Properties().stacksTo(1).fireResistant()
+                    .tab(ModCreativeModeTab.PHANTOMS_QUINQUES_TAB), "The left half of Kura","Koukaku","Unknown",
+                    "Unknown"));
+    public static final RegistryObject<Item> KURA_R = ITEMS.register("kura_r",
+            ()-> new KuraItem(ModTiers.QUINQUE, 5, 5,  new Item.Properties().stacksTo(1).fireResistant()
+                    .tab(ModCreativeModeTab.PHANTOMS_QUINQUES_TAB), "The right half of Kura","Koukaku","Unknown",
+                    "Unknown"));
     public static final RegistryObject<Item> ROTTEN_FOLLOW = ITEMS.register("rotten_follow",
             ()-> new RottenFollowItem(ModTiers.QUINQUE, 5, 5,  new Item.Properties().stacksTo(1).fireResistant()
                     .tab(ModCreativeModeTab.PHANTOMS_QUINQUES_TAB), "Chainsaw moment","Rinkaku","S",
